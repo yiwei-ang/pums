@@ -1,0 +1,15 @@
+ops:
+  prepare_data_op:
+    config:
+      housing_table: public.psam_h06
+      output_file: working_dir/data.parquet
+      person_table: public.psam_p06
+  run_inference_op:
+    config:
+      input_file: working_dir/data.parquet
+      output_file: working_dir/scored_data.parquet
+  upload_s3_op:
+    config:
+      bucket: food-stamp-prediction
+      file: working_dir/scored_data.parquet
+      key: snap_outputs/ca/scored_data.parquet

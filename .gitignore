@@ -1,0 +1,5 @@
+working_dir
+.ipynb_checkpoints
+.tmp*
+dagster_home
+mlruns

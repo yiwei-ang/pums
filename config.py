@@ -1,0 +1,5 @@
+import os
+
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+GOOGLE_CLIENT_API_KEY = os.getenv("GOOGLE_CLIENT_API_KEY")
+VECTORDB_PATH = os.getenv("VECTORDB_PATH")
